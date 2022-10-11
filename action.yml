@@ -1,0 +1,35 @@
+name: "Setup AltWalker"
+description: "Set up a specific version of AltWalker and GraphWalker CLI."
+branding:
+  icon: "git-pull-request"
+  color: "green"
+inputs:
+  python-version:
+    description: "Version range or exact version of Python or PyPy to use, using SemVer's version range syntax. Reads from .python-version if unset."
+    required: false
+    default: "3.10"
+  java-version:
+    description: "The Java version to set up. Takes a whole or semver Java version."
+    required: false
+    default: "17"
+  java-distribution:
+    description: "Java distribution."
+    required: false
+    default: "zulu"
+  graphwalker-version:
+    description: "Version range or exact version of GraphWalker to use, using SemVer's version syntax."
+    required: false
+    default: "4.3.2"
+runs:
+  using: "composite"
+  steps:
+    - name: Setup GraphWalker ${{ inputs.graphwalker-version }}.
+      uses: altwalker/setup-graphwalker@v1
+      with:
+        graphwalker-version: ${{ inputs.graphwalker-version }}
+        python-version: ${{ inputs.python-version }}
+        java-version: ${{ inputs.java-version }}
+    - name: Setup AltWalker ${{ inputs.altwalker-version }}
+      shell: bash
+      run: |
+        pip install altwalker==${{ input.altwalker-version }}
