@@ -13,7 +13,10 @@ jobs:
       - name: Setup AltWalker ${{ matrix.altwalker-version }}
         uses: altwalker/setup-altwalker@main
         with:
+          graphwalker-version: ${{ matrix.graphwalker-version }}
           altwalker-version: ${{ matrix.altwalker-version }}
+      - name: Run GraphWalker
+          gw --version
       - name: Run AltWalker
         run: |
           altwalker --version
