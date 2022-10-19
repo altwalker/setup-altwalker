@@ -13,7 +13,7 @@ This action provides the following functionality for GitHub Actions users:
 
 ```yml
 steps:
-  - name: Setup GraphWalker
+  - name: Setup AltWalker
     uses: altwalker/setup-altwalker@v1
     with:
       altwalker-version: '0.3.1'
