@@ -16,6 +16,7 @@ jobs:
           graphwalker-version: ${{ matrix.graphwalker-version }}
           altwalker-version: ${{ matrix.altwalker-version }}
       - name: Run GraphWalker
+        run: |
           gw --version
       - name: Run AltWalker
         run: |
