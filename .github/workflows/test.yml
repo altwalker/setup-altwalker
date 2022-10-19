@@ -6,7 +6,7 @@ jobs:
 
     strategy:
       matrix:
-        graphwalker-version: 'latest'
+        graphwalker-version: [ '4.3.1', 'latest' ]
         altwalker-version: [ '0.3.0', '0.3.1' ]
 
     steps:
