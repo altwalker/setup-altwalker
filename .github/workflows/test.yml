@@ -1,0 +1,39 @@
+on: [push]
+
+jobs:
+  test-ubuntu:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        graphwalker-version: 'latest'
+        altwalker-version: [ '0.3.0', '0.3.1' ]
+
+    steps:
+      - name: Setup AltWalker ${{ matrix.altwalker-version }}
+        uses: altwalker/setup-altwalker@main
+        with:
+          altwalker-version: ${{ matrix.altwalker-version }}
+      - name: Run AltWalker
+        run: |
+          altwalker --version
+
+  test-macos:
+    runs-on: macos-latest
+
+    steps:
+      - name: Setup AltWalker
+        uses: altwalker/setup-altwalker@main
+      - name: Run AltWalker
+        run: |
+          altwalker --version
+
+  test-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Setup AltWalker
+        uses: altwalker/setup-altwalker@main
+      - name: Run AltWalker
+        run: |
+          altwalker --version
