@@ -32,4 +32,4 @@ runs:
     - name: Setup AltWalker ${{ inputs.altwalker-version }}
       shell: bash
       run: |
-        pip install altwalker==${{ input.altwalker-version }}
+        pip install altwalker==${{ inputs.altwalker-version }}
