@@ -1,5 +1,5 @@
 name: "Setup AltWalker"
-description: "Set up a specific version of AltWalker and GraphWalker CLI."
+description: "Set up a specific version of AltWalker."
 branding:
   icon: "git-pull-request"
   color: "green"
