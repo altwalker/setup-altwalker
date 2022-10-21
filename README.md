@@ -27,7 +27,7 @@ The `altwalker-version` input is optional. If the `altwalker-version` option doe
 
 See [action.yml](action.yml) for more details.
 
-This action also provides all input options provided by [@altwalker/setup-graphwalker](https://github.com/altwalker/setup-graphwalker) action.
+This action also provides all input options provided by [altwalker/setup-graphwalker](https://github.com/altwalker/setup-graphwalker) action.
 
 ## License
 
