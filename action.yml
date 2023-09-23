@@ -1,4 +1,4 @@
-name: "Setup AltWalker"
+name: "Setup AltWalker CLI"
 description: "Set up a specific version of AltWalker."
 branding:
   icon: "git-pull-request"
@@ -23,7 +23,7 @@ inputs:
   altwalker-version:
     description: "Version range or exact version of AltWalker to use, using SemVer's version syntax."
     required: false
-    default: "0.3.1"
+    default: "0.4.0"
 runs:
   using: "composite"
   steps:
