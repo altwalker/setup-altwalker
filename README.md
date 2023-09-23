@@ -16,7 +16,7 @@ steps:
   - name: Setup AltWalker
     uses: altwalker/setup-altwalker@v1
     with:
-      altwalker-version: '0.3.1'
+      altwalker-version: '0.4.0'
   - name: Run AltWalker
     run: |
       altwalker --version
