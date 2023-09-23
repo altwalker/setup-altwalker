@@ -23,11 +23,11 @@ steps:
 
 ```
 
-The `altwalker-version` input is optional. If the `altwalker-version` option does't exist the last released version of AltWalker will be installed.
+The `altwalker-version` input is optional. If the `altwalker-version` option is not specified, the latest released version of AltWalker will be installed.
 
-See [action.yml](action.yml) for more details.
+For additional details, refer to [action.yml](action.yml).
 
-This action also provides all input options provided by [altwalker/setup-graphwalker](https://github.com/altwalker/setup-graphwalker) action.
+Furthermore, this action offers all the input options available in the [altwalker/setup-graphwalker](https://github.com/altwalker/setup-graphwalker) action.
 
 ## License
 
