@@ -7,7 +7,7 @@ jobs:
     strategy:
       matrix:
         graphwalker-version: [ '4.3.1', 'latest' ]
-        altwalker-version: [ '0.3.0', '0.3.1' ]
+        altwalker-version: [ '0.3.1', '0.4.0' ]
 
     steps:
       - name: Setup AltWalker ${{ matrix.altwalker-version }}
